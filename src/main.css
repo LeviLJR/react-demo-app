@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+:root{
+  --font-londrina: "Londrina Solid", sans-serif;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+}
+
+@theme{
+  --font-heading: var(--font-londrina);
+  --radius-xl: 0.625rem;
+}
+
+.PhoneInput input:focus {
+  outline: none;
+}
