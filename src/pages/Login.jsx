@@ -44,6 +44,7 @@ export function Login() {
       <form onSubmit={handleSubmit} className="flex flex-col gap-5">
         <label>
           <PhoneInput
+          required
             placeholder="Enter phone number"
             international
             value={phoneNumber || undefined}
