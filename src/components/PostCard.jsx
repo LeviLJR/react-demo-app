@@ -1,8 +1,9 @@
-export function PostCard({ post, onClick, as = "li" }) {
-  const Tag = as;
+export function PostCard({ post, onClick, as: Tag = "li" }) {
+  const clickable = typeof onClick === "function";
   return (
     <Tag
       className={`rounded-lg border p-4 shadow-sm hover:shadow-md transition {onClick ? "cursor-pointer hover:bg-gray-50" : ""}`}
+      role={clickable ? "button" : undefined}
       onClick={onClick}
       aria-label={post?.title}
     >
