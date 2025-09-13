@@ -1,7 +1,7 @@
 import { Outlet, useLocation } from "react-router";
 import { Heart } from "lucide-react";
 import { useAuth } from "../../contexts/AuthContext";
-import { Button } from "../button";
+import { Button } from "../Button";
 
 export function Layout() {
   const { pathname } = useLocation();
@@ -30,7 +30,7 @@ export function Layout() {
         <span className="flex items-center justify-center">
           Made with&nbsp;
           <Heart fill="black" size={18} stroke="none" />
-          &nbsp;for Levi!
+          &nbsp;by Levi!
         </span>
       </footer>
     </div>

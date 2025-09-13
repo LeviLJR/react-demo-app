@@ -7,7 +7,7 @@ export function PostCard({ post, onClick, as: Tag = "li" }) {
       onClick={onClick}
       aria-label={post?.title}
     >
-      <h3 className="font-medium text-gray-900">{post?.title ?? "Untitled"}</h3>
+      <h1 className="font-medium text-gray-900">{post?.title ?? "Untitled"}</h1>
       {post?.body && (
         <p className="text-sm text-gray-600 mt-1 line-clamp-2">{post.body}</p>
       )}
