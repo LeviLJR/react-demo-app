@@ -5,7 +5,7 @@ import { useAuth } from "../contexts/AuthContext";
 import { Section } from "../components/Section";
 import { PostCard } from "../components/PostCard";
 import { CommentList } from "../components/CommentList";
-import { Button } from "../components/button";
+import { Button } from "../components/Button";
 
 export function Detail() {
   const { id } = useParams();
